@@ -1,3 +1,64 @@
+.col-1 {
+  width: 8.3333333333%; }
+
+.col-2 {
+  width: 16.6666666667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.3333333333%; }
+
+.col-5 {
+  width: 41.6666666667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.3333333333%; }
+
+.col-8 {
+  width: 66.6666666667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.3333333333%; }
+
+.col-11 {
+  width: 91.6666666667%; }
+
+.col-12 {
+  width: 100%; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  height: 99vh; }
+
+* {
+  border: 1px dashed #000; }
+
+.header ul {
+  list-style: none; }
+
+.header ul li {
+  display: inline-block; }
+
 .wrap {
   position: relative;
   width: 80vmin;
@@ -76,6 +137,46 @@ a:nth-child(5) div {
 a:hover div {
   opacity: 1;
   transform: translatez(0px); }
+
+.modal {
+  /* This way it could be display flex or grid or whatever also. */
+  display: block;
+  /* Probably need media queries here */
+  width: 600px;
+  max-width: 100%;
+  height: 400px;
+  max-height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  /* Use this for centering if unknown width/height */
+  transform: translate(-50%, -50%);
+  /* If known, negative margins are probably better (less chance of blurry text). */
+  /* margin: -200px 0 0 -200px; */
+  background: white;
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9); }
+
+.closed {
+  display: none; }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.6); }
+
+.modal-guts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px 50px 20px 20px; }
 
 #nav-span-one #nav-span-two {
   position: absolute;
