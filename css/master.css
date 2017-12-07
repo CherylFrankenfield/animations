@@ -173,6 +173,15 @@ a:hover div {
     .modal .modal-content img {
       width: 100%; }
 
+.header img {
+  width: 15%;
+  float: left; }
+
+.header:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
 #nav-span-one #nav-span-two {
   position: absolute;
   width: 60%;

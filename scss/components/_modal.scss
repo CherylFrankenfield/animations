@@ -32,3 +32,16 @@
     }
   }
 }
+
+.header img {
+  width: 15%;
+  float: left;
+}
+
+.header:after {
+  @include clear-fix;
+}
+
+.header {
+
+}
