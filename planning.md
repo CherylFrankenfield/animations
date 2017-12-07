@@ -33,7 +33,34 @@ _The Navigation section contains an animated navigation element, which when clic
 
 ## SASS Use Cases
 
-_1. 
+_1. Currently, we do not plan on using a framework so will need to use SASS and use a for each loop function to create columns and grid for us._
+
+_2. We will use SASS nesting to help create an animated navigation element._
+
+_3. We will use SASS mixins for media queries and possibly color mixes._
+
+_4. We will use SASS variables for colors, fonts, etc._
+
+_5. We are using SASS partials like variables and component pages to split up and organize code._
+
+_6. We created modules.scss files and using the SASS @import to pull necessary code into CSS file._
+
+_7. We will most likely use SASS operators within functions to help with animating elements for affects._
+
+_8. We will use SASS @extend to reuse properties on several elements._
+
+_9. We will use % placeholders from SASS to help with creating social media icons on our contact page.
+
+_10. We will interpolation: #{} syntax for when we write a for each loop to create our columns and grid. 
+
+Here are some helfpul links we consulted for animations, inspiration, modal creation, etc.:
+http://designbeep.com/2012/06/20/circles-in-web-design40-inspiring-examples-for-web-designers/
+http://webey.eu/
+http://builtbybuffalo.com/
+http://www.mathildejacon.com/
+http://www.bcandullo.com/
+http://thesassway.com/advanced/cubic-bezier-representation-in-sass
+https://www.w3schools.com/w3css/w3css_modal.asp
 
 
 ## Known Bugs
@@ -55,13 +82,3 @@ _If you have any issues, questions, ideas or concerns, please contact me._
 *This is open source so feel free to grab and use.*
 
 Copyright (c) 2017 **_Griffin P. Longtin and Cheryl Frankenfield_**
-
-http://designbeep.com/2012/06/20/circles-in-web-design40-inspiring-examples-for-web-designers/
-
-http://webey.eu/
-http://builtbybuffalo.com/
-http://www.mathildejacon.com/
-http://www.bcandullo.com/
-http://thesassway.com/advanced/cubic-bezier-representation-in-sass
-
-https://www.w3schools.com/w3css/w3css_modal.asp
