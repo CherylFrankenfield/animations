@@ -85,6 +85,10 @@ a div {
   opacity: .5;
   transition: opacity .4s;
   border-radius: inherit; }
+  a div button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent; }
 
 a:nth-child(1) {
   border-radius: 20vmin 0 0 0;
@@ -139,44 +143,35 @@ a:hover div {
   transform: translatez(0px); }
 
 .modal {
-  /* This way it could be display flex or grid or whatever also. */
-  display: block;
-  /* Probably need media queries here */
-  width: 600px;
-  max-width: 100%;
-  height: 400px;
-  max-height: 100%;
-  position: fixed;
-  z-index: 100;
-  left: 50%;
-  top: 50%;
-  /* Use this for centering if unknown width/height */
-  transform: translate(-50%, -50%);
-  /* If known, negative margins are probably better (less chance of blurry text). */
-  /* margin: -200px 0 0 -200px; */
-  background: white;
-  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9); }
-
-.closed {
-  display: none; }
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 50;
-  background: rgba(0, 0, 0, 0.6); }
-
-.modal-guts {
+  display: none;
+  margin: auto;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding: 20px 50px 20px 20px; }
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 90%;
+  height: 80vmin;
+  max-height: 100%;
+  padding: 3%;
+  background-color: gray;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; }
+  .modal .header-text {
+    padding-bottom: 3px;
+    height: 30px; }
+    .modal .header-text h1 {
+      float: left; }
+    .modal .header-text img {
+      float: right;
+      width: 30px;
+      height: 111%; }
+  .modal .modal-content {
+    max-height: 90%;
+    overflow: auto;
+    width: 100%; }
+    .modal .modal-content img {
+      width: 100%; }
 
 #nav-span-one #nav-span-two {
   position: absolute;
