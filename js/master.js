@@ -8,5 +8,6 @@ $(function() {
     $("#modal-two").hide();
     $("#modal-three").hide();
     $("#modal-four").hide();
+    $("#modal-five").hide();
   });
 });
