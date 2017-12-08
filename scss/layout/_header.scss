@@ -1,6 +1,12 @@
-.header ul {
-  list-style: none;
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
-.header ul li {
-  display:inline-block;
+.header img {
+  width: 20%;
+}
+
+.header:after {
+  @include clear-fix;
 }

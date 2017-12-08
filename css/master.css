@@ -53,11 +53,18 @@ html {
 h1 {
   font-family: 'arconregular'; }
 
-.header ul {
-  list-style: none; }
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold; }
 
-.header ul li {
-  display: inline-block; }
+.header img {
+  width: 20%; }
+
+.header:after {
+  content: " ";
+  display: block;
+  clear: both; }
 
 .wrap {
   position: relative;
@@ -172,15 +179,6 @@ a:hover div {
     width: 100%; }
     .modal .modal-content img {
       width: 100%; }
-
-.header img {
-  width: 15%;
-  float: left; }
-
-.header:after {
-  content: " ";
-  display: block;
-  clear: both; }
 
 #nav-span-one #nav-span-two {
   position: absolute;
